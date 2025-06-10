@@ -1,26 +1,187 @@
-<section>
-  <h2>✨ Health Insights & Posts</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://www.cdc.gov/handwashing/images/poster-handwashing.jpg" alt="Handwashing">
-      <div class="card-content">
-        <h3>"Clean hands save lives."</h3>
-        <p>Frequent handwashing prevents infectious diseases in our community.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://www.cdc.gov/mosquitoes/images/prevent/pic-mosquito-bite-prevention.jpg" alt="Mosquito control">
-      <div class="card-content">
-        <h3>"Eliminate stagnant water."</h3>
-        <p>Prevention is key to stopping dengue and leptospirosis.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/UN0732650.jpeg" alt="Vaccination">
-      <div class="card-content">
-        <h3>"Vaccines work."</h3>
-        <p>Immunization protects individuals and community health.</p>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Public Health Inspector - Aluthwala</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e6f7ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .map-container {
+      text-align: center;
+      margin: 2rem auto;
+    }
+
+    iframe {
+      width: 90%;
+      height: 400px;
+      border: 3px solid #007acc;
+      border-radius: 12px;
+    }
+
+    section {
+      padding: 2rem;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #007acc;
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .outbreaks {
+      background: #fff3cd;
+      border-left: 6px solid #ffc107;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+
+    .phone-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 2rem;
+      background: #28a745;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .phone-button:hover {
+      background: #218838;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #007acc;
+      color: white;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Public Health Inspector - Aluthwala Area</h1>
+    <p>Protecting Public Health with Dedication and Care</p>
+  </header>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9367311931593!2d80.23178127407527!3d6.896001793098573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae178d05533b0cd%3A0x6f7c6c81b22567f2!2sAluthwala!5e0!3m2!1sen!2slk!4v1718019289995" 
+      allowfullscreen="" 
+      loading="lazy"
+    ></iframe>
   </div>
-</section>
+
+  <section>
+    <h2>✨ Health Insights & Posts</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.cdc.gov/handwashing/images/poster-handwashing.jpg" alt="Handwashing">
+        <div class="card-content">
+          <h3>"Clean hands save lives."</h3>
+          <p>Frequent handwashing helps stop the spread of infections.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.cdc.gov/mosquitoes/images/prevent/pic-mosquito-bite-prevention.jpg" alt="Mosquito control">
+        <div class="card-content">
+          <h3>"Eliminate stagnant water."</h3>
+          <p>Prevent dengue by reducing mosquito breeding places.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/UN0732650.jpeg" alt="Vaccination">
+        <div class="card-content">
+          <h3>"Vaccines save lives."</h3>
+          <p>Immunization is vital to protect children and adults alike.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚨 Outbreaks & Alerts in Galle District</h2>
+    <div class="outbreaks">
+      <h4>Dengue Fever</h4>
+      <p>Increased cases reported in Aluthwala. Remove mosquito breeding grounds, and use repellents.</p>
+      <h4>Leptospirosis</h4>
+      <p>Wear protective footwear during heavy rains and avoid flooded areas.</p>
+      <h4>Seasonal Flu</h4>
+      <p>Encourage vaccination and hand hygiene, especially in children and elderly.</p>
+    </div>
+  </section>
+
+  <button class="phone-button" onclick="alert('Contact PHI Aluthwala: 0781600191')">
+    📞 View Contact Number
+  </button>
+
+  <footer>
+    <p>&copy; 2025 Public Health Inspector – Aluthwala. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
