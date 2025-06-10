@@ -1,101 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aluthwala Public Health</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin:0; font-family:'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
-      color:#333;
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-    header {padding:20px;text-align:center;background:#0288d1;color:#fff;}
-    h1{margin:0;font-size:2.2rem;}
-    .intro {padding:20px;text-align:center;}
-    .map-container {max-width:800px;margin:20px auto; text-align:center;}
-    .map-container iframe {width:100%;height:300px;border:0;border-radius:10px;}
-    .cards {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin:20px;}
-    .card {background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);width:250px;overflow:hidden;}
-    .card img {width:100%;height:140px;object-fit:cover;}
-    .card-content {padding:15px;}
-    .card-content h3{margin:0 0 10px;font-size:1.1rem;}
-    .quote {font-style:italic;color:#555;padding:10px;border-left:4px solid #0288d1;margin:20px;}
-    section {margin:30px;}
-    ul {max-width:800px;margin:0 auto;padding-left:20px;}
-    ul li {margin-bottom:10px;line-height:1.5;}
-    footer{text-align:center;padding:15px;background:#0288d1;color:#fff;margin-top:30px;}
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Aluthwala Area Public Health</h1>
-  </header>
-  
-  <div class="intro">
-    <p>Protecting community health by monitoring disease trends & promoting prevention in Aluthwala, Galle District.</p>
-  </div>
-  
-  <section class="map-container">
-    <h2>📍 PHI Office Location – Aluthwala</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15803.693115930516!2d80.26591511071926!3d6.174245762065599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173924e034315%3A0x7e1dd40e4f369a29!2sAluthwala%20PHI%20Office!5e0!3m2!1sen!2slk!4v1717935195944!5m2!1sen!2slk" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <section>
-    <h2>✨ Health Insights & Posts</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://source.unsplash.com/featured/?handwashing" alt="Handwashing">
-        <div class="card-content">
-          <h3>"Clean hands save lives."</h3>
-          <p>Frequent handwashing prevents infectious diseases in our community.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/featured/?mosquito" alt="Mosquito control">
-        <div class="card-content">
-          <h3>"Eliminate stagnant water."</h3>
-          <p>Prevention is key to stopping dengue and leptospirosis.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/featured/?vaccination" alt="Vaccination">
-        <div class="card-content">
-          <h3>"Vaccines work."</h3>
-          <p>Immunization protects individuals and community health.</p>
-        </div>
+<section>
+  <h2>✨ Health Insights & Posts</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://www.cdc.gov/handwashing/images/poster-handwashing.jpg" alt="Handwashing">
+      <div class="card-content">
+        <h3>"Clean hands save lives."</h3>
+        <p>Frequent handwashing prevents infectious diseases in our community.</p>
       </div>
     </div>
-  </section>
-
-  <section>
-    <h2>📊 Recent Disease Outbreaks in Galle / Aluthwala Area</h2>
-    <ul>
-      <li><strong>Dengue:</strong> Heavy rainfall triggered peaks in 2023 with >27k cases nationally; Galle remains high risk during monsoons (June–July, Oct–Dec) 8.</li>
-      <li><strong>Leptospirosis:</strong> Galle district reported ~6,000 cases (2010–2022), 75 deaths (2017–2022) with peak in 2020; endemic MOH zones include Aluthwala surrounding areas 9.</li>
-      <li><strong>Chikungunya:</strong> Sri Lanka experiencing largest outbreak in 20 years in 2025; Likely affecting Galle region too 10.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🛡️ Prevention Tips</h2>
-    <ul>
-      <li>Frequent handwashing with soap and clean water.</li>
-      <li>Remove standing water daily (flower pots, containers).</li>
-      <li>Cover skin and use repellents to prevent mosquito bites.</li>
-      <li>Wear protective clothing during farming or flood cleanup.</li>
-      <li>Get vaccinated for seasonal influenza and other recommended diseases.</li>
-      <li>Cook foods thoroughly and keep them covered.</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Public Health Inspector – Aluthwala, Galle District — All Rights Reserved</p>
-  </footer>
-
-</body>
-</html>
+    <div class="card">
+      <img src="https://www.cdc.gov/mosquitoes/images/prevent/pic-mosquito-bite-prevention.jpg" alt="Mosquito control">
+      <div class="card-content">
+        <h3>"Eliminate stagnant water."</h3>
+        <p>Prevention is key to stopping dengue and leptospirosis.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/UN0732650.jpeg" alt="Vaccination">
+      <div class="card-content">
+        <h3>"Vaccines work."</h3>
+        <p>Immunization protects individuals and community health.</p>
+      </div>
+    </div>
+  </div>
+</section>
